@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo-Elementos</title>
+  <style>
+    p::before {
+      content: "👉 ";
+      color: green;
+    }
+
+    p::after {
+      content: " 🔥";
+      color: red;
+    }
+
+    h1::first-letter {
+      color: dodgerblue;
+      font-size: 40px;
+    }
+
+    p::first-line {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pseudo-Elementos</h1>
+
+  <p>Esse é um parágrafo com pseudo-elementos adicionando conteúdo antes e depois. E ainda deixamos a primeira linha em negrito!</p>
+
+</body>
+</html>

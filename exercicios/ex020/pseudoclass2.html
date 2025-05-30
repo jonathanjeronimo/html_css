@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pseudo-Classes no CSS</title>
+  <style>
+    button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    /* Quando o mouse passa por cima do botão */
+    button:hover {
+      background-color: #555;
+    }
+
+    input {
+      padding: 8px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+    }
+
+    /* Quando o input recebe foco (clicado) */
+    input:focus {
+      border-color: dodgerblue;
+      outline: none;
+    }
+
+    /* Usando nth-child pra estilizar o segundo item da lista */
+    li:nth-child(2) {
+      color: red;
+    }
+
+    /* Estiliza o primeiro item */
+    li:first-child {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Pseudo-Classes em Ação</h2>
+
+  <button>Passa o mouse aqui</button>
+  <br><br>
+
+  <input type="text" placeholder="Clica aqui pra focar">
+
+  <ul>
+    <li>Primeiro item</li>
+    <li>Segundo item</li>
+    <li>Terceiro item</li>
+  </ul>
+
+</body>
+</html>
