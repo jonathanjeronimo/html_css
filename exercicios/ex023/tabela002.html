@@ -12,23 +12,40 @@ sans-serif;
     table {
         width: 400px;
         height: 200px;
-       
+       border-collapse: collapse;
+       position: relative
     }
     th {
         background-color: gray;
         height: 50px;
         width: 100px;
+        color: white;
+    }
+    tfoot {
+        background-color: gray;
+        color: white;
+    }
+    thead > tr > th {
+        position: sticky;
     }
     td {
         border: 1px solid black;
         padding: 8px;
-        text-align: center; /*alinhamento 
-herizontal*/
+        text-align: left; /*alinhamento 
+        herizontal*/
         vertical-align: middle; /*alinhamento 
-vertical*/
+        vertical*/
     }
+    
     .numero {
         text-align: right;
+    }
+
+    caption {
+
+    }
+    tbody > tr:nth-child(even) {
+        background-color: lightgray;
     }
 </style>
 </head>
@@ -37,6 +54,7 @@ vertical*/
     <!--
         Anatomia para Tabelas Grandes
             TABLE
+                CAPTION
                 TR, TD, TH
             TBOBY
                 TR, TD, TH
@@ -45,15 +63,16 @@ vertical*/
     -->
 
     <Table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>210.147.125</td>
             </tr>
         </tfoot>
